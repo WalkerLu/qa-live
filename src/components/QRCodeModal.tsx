@@ -1,6 +1,6 @@
 import React from 'react';
 import { X } from 'lucide-react';
-import QRCode from 'qrcode.react';
+import { QRCodeSVG } from 'qrcode.react';
 import { useI18n } from '../contexts/I18nContext';
 
 interface QRCodeModalProps {
@@ -32,7 +32,7 @@ const QRCodeModal: React.FC<QRCodeModalProps> = ({ isOpen, onClose }) => {
         
         <div className="flex flex-col items-center space-y-4">
           <div className="p-4 bg-white border border-gray-200 rounded-lg">
-            <QRCode
+            <QRCodeSVG
               value={currentUrl}
               size={200}
               level="H"
