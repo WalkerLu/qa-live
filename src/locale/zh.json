@@ -68,5 +68,11 @@
     "switchToEnglish": "切换到英文",
     "chinese": "中文",
     "english": "英文"
+  },
+  "qrCode": {
+    "title": "二维码",
+    "description": "扫描此二维码在移动设备上打开此页面",
+    "copyLink": "复制链接",
+    "copied": "链接已复制到剪贴板！"
   }
 }

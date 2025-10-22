@@ -68,5 +68,11 @@
     "switchToEnglish": "Switch to English",
     "chinese": "Chinese",
     "english": "English"
+  },
+  "qrCode": {
+    "title": "QR Code",
+    "description": "Scan this QR code to open this page on your mobile device",
+    "copyLink": "Copy Link",
+    "copied": "Link copied to clipboard!"
   }
 }

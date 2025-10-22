@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Search, LogIn, LogOut, MessageSquare, Languages } from 'lucide-react';
+import { Search, LogIn, LogOut, MessageSquare, Languages, QrCode } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth';
 import { useI18n } from '../contexts/I18nContext';
 import LoginModal from './LoginModal';
+import QRCodeModal from './QRCodeModal';
 
 interface HeaderProps {
   searchTerm: string;
@@ -13,6 +14,7 @@ const Header: React.FC<HeaderProps> = ({ searchTerm, onSearchChange }) => {
   const { isAuthenticated, speaker, logout } = useAuth();
   const { language, setLanguage, t } = useI18n();
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showQRCodeModal, setShowQRCodeModal] = useState(false);
 
   const handleLogout = () => {
     logout();
@@ -33,6 +35,13 @@ const Header: React.FC<HeaderProps> = ({ searchTerm, onSearchChange }) => {
                   <MessageSquare className="h-6 w-6 text-white" />
                 </div>
                 <h1 className="text-2xl font-bold text-blue-900">{t('app.title')}</h1>
+                <button
+                  onClick={() => setShowQRCodeModal(true)}
+                  className="p-2 text-gray-600 hover:text-red-600 transition-colors"
+                  title={t('qrCode.title')}
+                >
+                  <QrCode className="h-5 w-5" />
+                </button>
               </div>
             </div>
             
@@ -90,6 +99,13 @@ const Header: React.FC<HeaderProps> = ({ searchTerm, onSearchChange }) => {
         <LoginModal
           isOpen={showLoginModal}
           onClose={() => setShowLoginModal(false)}
+        />
+      )}
+      
+      {showQRCodeModal && (
+        <QRCodeModal
+          isOpen={showQRCodeModal}
+          onClose={() => setShowQRCodeModal(false)}
         />
       )}
     </>
