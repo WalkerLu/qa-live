@@ -1,5 +1,6 @@
 import React from 'react';
 import { Filter } from 'lucide-react';
+import { useI18n } from '../contexts/I18nContext';
 
 interface QuestionFilterProps {
   currentFilter: 'all' | 'answered' | 'unanswered';
@@ -16,15 +17,16 @@ const QuestionFilter: React.FC<QuestionFilterProps> = ({
   onFilterChange, 
   questionCounts 
 }) => {
+  const { t } = useI18n();
   const filterOptions = [
-    { value: 'all' as const, label: 'All Questions', count: questionCounts.total },
-    { value: 'answered' as const, label: 'Answered', count: questionCounts.answered },
-    { value: 'unanswered' as const, label: 'Unanswered', count: questionCounts.unanswered },
+    { value: 'all' as const, label: t('questions.all'), count: questionCounts.total },
+    { value: 'answered' as const, label: t('questions.answered'), count: questionCounts.answered },
+    { value: 'unanswered' as const, label: t('questions.unanswered'), count: questionCounts.unanswered },
   ];
 
   return (
     <div className="flex items-center justify-between mb-6">
-      <h2 className="text-xl font-semibold text-gray-900">Questions</h2>
+      <h2 className="text-xl font-semibold text-gray-900">{t('questions.title')}</h2>
       
       <div className="flex items-center space-x-2">
         <Filter className="h-5 w-5 text-gray-400" />

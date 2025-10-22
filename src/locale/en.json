@@ -1,0 +1,72 @@
+{
+  "app": {
+    "title": "Q&A Live",
+    "welcome": "Welcome, {name}",
+    "searchPlaceholder": "Search questions...",
+    "noQuestions": "No questions yet. Be the first to ask!",
+    "noQuestionsFiltered": "No questions found matching your filters."
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "speakerLogin": "Speaker Login",
+    "username": "Username",
+    "usernamePlaceholder": "Enter your username",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "invalidCredentials": "Invalid username or password"
+  },
+  "questions": {
+    "title": "Questions",
+    "all": "All Questions",
+    "answered": "Answered",
+    "unanswered": "Unanswered",
+    "total": "Total Questions",
+    "submit": "Submit Question",
+    "answer": "Answer",
+    "selectToAnswer": "Select to Answer",
+    "answeredBy": "Answered by {name}",
+    "askedBy": "Asked by {name}",
+    "answerLabel": "Your Answer",
+    "answerPlaceholder": "Type your answer here...",
+    "answerTypeLabel": "How would you like to answer this question?",
+    "answerTypeText": "Provide written answer",
+    "answerTypeStage": "Answer live on stage",
+    "stageAnswerNote": "Answered live on stage"
+  },
+  "modal": {
+    "submitQuestion": "Submit a Question",
+    "answerQuestion": "Answer Question",
+    "yourName": "Your Name",
+    "namePlaceholder": "Enter your name",
+    "questionTitle": "Question Title",
+    "titlePlaceholder": "Enter question title",
+    "questionDescription": "Question Description",
+    "descriptionPlaceholder": "Describe your question in detail",
+    "submitQuestionButton": "Submit Question",
+    "answerMethod": "How would you like to answer this question?",
+    "writtenAnswer": "Provide written answer",
+    "liveAnswer": "Answer live on stage",
+    "yourAnswer": "Your Answer",
+    "answerPlaceholder": "Type your answer here...",
+    "liveAnswerDescription": "This question will be marked as answered and noted as \"Answered live on stage\". The audience will know that you addressed this question during your presentation.",
+    "submitAnswer": "Submit Answer",
+    "cancel": "Cancel"
+  },
+  "status": {
+    "answered": "Answered",
+    "unanswered": "Unanswered"
+  },
+  "common": {
+    "cancel": "Cancel"
+  },
+  "floatingButton": {
+    "submitQuestion": "Submit Question"
+  },
+  "language": {
+    "switchToChinese": "Switch to Chinese",
+    "switchToEnglish": "Switch to English",
+    "chinese": "Chinese",
+    "english": "English"
+  }
+}

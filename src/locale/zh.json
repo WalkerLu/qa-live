@@ -1,0 +1,72 @@
+{
+  "app": {
+    "title": "问答直播",
+    "welcome": "欢迎, {name}",
+    "searchPlaceholder": "搜索问题...",
+    "noQuestions": "还没有问题，成为第一个提问者！",
+    "noQuestionsFiltered": "没有找到符合筛选条件的问题。"
+  },
+  "auth": {
+    "login": "登录",
+    "logout": "退出",
+    "speakerLogin": "演讲者登录",
+    "username": "用户名",
+    "usernamePlaceholder": "请输入用户名",
+    "password": "密码",
+    "passwordPlaceholder": "请输入密码",
+    "invalidCredentials": "用户名或密码无效"
+  },
+  "questions": {
+    "title": "问题",
+    "all": "所有问题",
+    "answered": "已回答",
+    "unanswered": "未回答",
+    "total": "总问题数",
+    "submit": "提交问题",
+    "answer": "回答",
+    "selectToAnswer": "选择回答",
+    "answeredBy": "由 {name} 回答",
+    "askedBy": "由 {name} 提问",
+    "answerLabel": "您的回答",
+    "answerPlaceholder": "在此输入您的回答...",
+    "answerTypeLabel": "您想如何回答这个问题？",
+    "answerTypeText": "提供书面回答",
+    "answerTypeStage": "现场回答",
+    "stageAnswerNote": "现场回答"
+  },
+  "modal": {
+    "submitQuestion": "提交问题",
+    "answerQuestion": "回答问题",
+    "yourName": "您的姓名",
+    "namePlaceholder": "请输入您的姓名",
+    "questionTitle": "问题标题",
+    "titlePlaceholder": "请输入问题标题",
+    "questionDescription": "问题描述",
+    "descriptionPlaceholder": "请详细描述您的问题",
+    "submitQuestionButton": "提交问题",
+    "answerMethod": "您想如何回答这个问题？",
+    "writtenAnswer": "提供书面回答",
+    "liveAnswer": "现场回答",
+    "yourAnswer": "您的回答",
+    "answerPlaceholder": "在此输入您的回答...",
+    "liveAnswerDescription": "此问题将被标记为已回答，并注明\"现场回答\"。观众将知道您在演讲中回答了这个问题。",
+    "submitAnswer": "提交回答",
+    "cancel": "取消"
+  },
+  "status": {
+    "answered": "已回答",
+    "unanswered": "未回答"
+  },
+  "common": {
+    "cancel": "取消"
+  },
+  "floatingButton": {
+    "submitQuestion": "提交问题"
+  },
+  "language": {
+    "switchToChinese": "切换到中文",
+    "switchToEnglish": "切换到英文",
+    "chinese": "中文",
+    "english": "英文"
+  }
+}
