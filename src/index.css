@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.language-switcher {
+  @apply flex items-center space-x-1;
+}
+
+.language-btn {
+  @apply px-2 py-1 text-sm font-medium rounded-md transition-colors duration-200;
+}
+
+.language-btn.active {
+  @apply bg-red-600 text-white;
+}
+
+.language-btn:not(.active) {
+  @apply text-gray-600 hover:text-gray-800 hover:bg-gray-100;
+}
+
+.language-separator {
+  @apply text-gray-300;
+}

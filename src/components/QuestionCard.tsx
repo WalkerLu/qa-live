@@ -3,6 +3,7 @@ import { Question } from '../types';
 import { timeAgo } from '../utils/dateUtils';
 import { CheckCircle, Clock, User, Calendar } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth';
+import { useTranslation } from 'react-i18next';
 import AnswerModal from './AnswerModal';
 
 interface QuestionCardProps {
@@ -12,6 +13,7 @@ interface QuestionCardProps {
 
 const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswerSubmit }) => {
   const { isAuthenticated } = useAuth();
+  const { t } = useTranslation();
   const [showAnswerModal, setShowAnswerModal] = useState(false);
 
   const handleSelectToAnswer = () => {
@@ -33,7 +35,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswerSubmit })
                 ? 'bg-green-100 text-green-800' 
                 : 'bg-red-100 text-red-800'
             }`}>
-              {question.status === 'answered' ? 'Answered' : 'Unanswered'}
+              {question.status === 'answered' ? t('questions.answered') : t('questions.unanswered')}
             </span>
           </div>
           
@@ -42,7 +44,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswerSubmit })
               onClick={handleSelectToAnswer}
               className="px-3 py-1 text-sm font-medium text-white bg-red-600 hover:bg-red-700 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
             >
-              Select to Answer
+              {t('questions.selectToAnswer')}
             </button>
           )}
         </div>
@@ -57,11 +59,11 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswerSubmit })
 
         {question.answer && (
           <div className="bg-gray-50 rounded-lg p-4 mb-4">
-            <h4 className="text-sm font-medium text-gray-900 mb-2">Answer:</h4>
+            <h4 className="text-sm font-medium text-gray-900 mb-2">{t('questions.answer', 'Answer:')}</h4>
             <p className="text-gray-700 leading-relaxed">{question.answer}</p>
             {question.answeredBy && (
               <p className="text-xs text-gray-500 mt-2">
-                Answered by {question.answeredBy}
+                {t('questions.answeredBy', { name: question.answeredBy })}
                 {question.answeredAt && ` • ${timeAgo(question.answeredAt)}`}
               </p>
             )}

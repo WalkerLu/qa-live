@@ -1,0 +1,55 @@
+{
+  "header": {
+    "title": "Q&A Platform",
+    "searchPlaceholder": "Search questions...",
+    "login": "Speaker Login",
+    "logout": "Logout",
+    "welcome": "Welcome, {{name}}"
+  },
+  "statistics": {
+    "totalQuestions": "Total Questions",
+    "answered": "Answered",
+    "unanswered": "Unanswered"
+  },
+  "questions": {
+    "noQuestions": "No questions yet. Be the first to ask!",
+    "filter": {
+      "all": "All",
+      "answered": "Answered",
+      "unanswered": "Unanswered"
+    },
+    "submitter": "Submitted by {{name}}",
+    "answeredBy": "Answered by {{name}}",
+    "answeredLive": "Answered live on stage",
+    "selectToAnswer": "Select to Answer",
+    "viewAnswer": "View Answer"
+  },
+  "modals": {
+    "question": {
+      "title": "Submit a Question",
+      "name": "Your Name",
+      "questionTitle": "Question Title",
+      "description": "Question Description",
+      "submit": "Submit Question",
+      "cancel": "Cancel"
+    },
+    "answer": {
+      "title": "Answer Question",
+      "answer": "Your Answer",
+      "answeredLive": "Answered live on stage",
+      "submit": "Submit Answer",
+      "cancel": "Cancel"
+    },
+    "login": {
+      "title": "Speaker Login",
+      "username": "Username",
+      "password": "Password",
+      "login": "Login",
+      "cancel": "Cancel",
+      "error": "Invalid username or password"
+    }
+  },
+  "buttons": {
+    "submitQuestion": "Submit Question"
+  }
+}

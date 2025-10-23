@@ -8,6 +8,7 @@ import FloatingSubmitButton from '../components/FloatingSubmitButton';
 import { Question } from '../types';
 import { sampleQuestions } from '../data/Questions';
 import { useAuth } from '../hooks/useAuth';
+import { useTranslation } from 'react-i18next';
 
 const Home: React.FC = () => {
   const [questions, setQuestions] = useState<Question[]>(sampleQuestions);
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState<'all' | 'answered' | 'unanswered'>('all');
   const [showQuestionModal, setShowQuestionModal] = useState(false);
   const { speaker } = useAuth();
+  const { t } = useTranslation();
 
   const filteredAndSortedQuestions = useMemo(() => {
     let filtered = questions;
@@ -98,8 +100,8 @@ const Home: React.FC = () => {
             <div className="text-center py-12">
               <p className="text-gray-500 text-lg">
                 {searchTerm || statusFilter !== 'all' 
-                  ? 'No questions found matching your filters.' 
-                  : 'No questions yet. Be the first to ask!'
+                  ? t('home.noQuestionsFound') 
+                  : t('home.noQuestionsYet')
                 }
               </p>
             </div>

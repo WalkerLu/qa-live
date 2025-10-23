@@ -1,31 +1,33 @@
 import React from 'react';
 import { Question } from '../types';
 import { MessageSquare, CheckCircle, Clock } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface StatisticsCardsProps {
   questions: Question[];
 }
 
 const StatisticsCards: React.FC<StatisticsCardsProps> = ({ questions }) => {
+  const { t } = useTranslation();
   const totalQuestions = questions.length;
   const answeredQuestions = questions.filter(q => q.status === 'answered').length;
   const unansweredQuestions = questions.filter(q => q.status === 'unanswered').length;
 
   const stats = [
     {
-      title: 'Total Questions',
+      title: t('statistics.totalQuestions'),
       value: totalQuestions,
       icon: MessageSquare,
       color: 'bg-blue-900',
     },
     {
-      title: 'Answered',
+      title: t('statistics.answered'),
       value: answeredQuestions,
       icon: CheckCircle,
       color: 'bg-green-600',
     },
     {
-      title: 'Unanswered',
+      title: t('statistics.unanswered'),
       value: unansweredQuestions,
       icon: Clock,
       color: 'bg-red-600',

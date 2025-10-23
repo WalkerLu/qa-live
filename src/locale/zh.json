@@ -1,0 +1,55 @@
+{
+  "header": {
+    "title": "问答平台",
+    "searchPlaceholder": "搜索问题...",
+    "login": "演讲者登录",
+    "logout": "退出登录",
+    "welcome": "欢迎, {{name}}"
+  },
+  "statistics": {
+    "totalQuestions": "总问题数",
+    "answered": "已回答",
+    "unanswered": "未回答"
+  },
+  "questions": {
+    "noQuestions": "还没有问题，快来第一个提问吧！",
+    "filter": {
+      "all": "全部",
+      "answered": "已回答",
+      "unanswered": "未回答"
+    },
+    "submitter": "由 {{name}} 提交",
+    "answeredBy": "由 {{name}} 回答",
+    "answeredLive": "现场已回答",
+    "selectToAnswer": "选择回答",
+    "viewAnswer": "查看回答"
+  },
+  "modals": {
+    "question": {
+      "title": "提交问题",
+      "name": "您的姓名",
+      "questionTitle": "问题标题",
+      "description": "问题描述",
+      "submit": "提交问题",
+      "cancel": "取消"
+    },
+    "answer": {
+      "title": "回答问题",
+      "answer": "您的回答",
+      "answeredLive": "现场已回答",
+      "submit": "提交回答",
+      "cancel": "取消"
+    },
+    "login": {
+      "title": "演讲者登录",
+      "username": "用户名",
+      "password": "密码",
+      "login": "登录",
+      "cancel": "取消",
+      "error": "用户名或密码错误"
+    }
+  },
+  "buttons": {
+    "submitQuestion": "提交问题"
+  }
+}
